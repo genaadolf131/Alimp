@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Alimp | Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="auth-page">
+        <div class="card" style="max-width: 400px; margin: 100px auto;">
+            <h2>Вход в Alimp</h2>
+            <input type="text" id="reg-username" placeholder="Придумайте никнейм">
+            
+            <div class="captcha-row">
+                <div id="captchaView" class="captcha-box"></div>
+                <button onclick="generateCaptcha()" class="btn-text">🔄</button>
+            </div>
+            <input type="text" id="captchaInput" placeholder="Введите код выше">
+            
+            <button onclick="handleLogin()" class="ios-btn-primary" style="width: 100%;">Войти</button>
+        </div>
+    </main>
+    <script src="site.js"></script>
+</body>
+</html>

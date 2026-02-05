@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimp (BETA)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Alimp <span class="beta-badge">BETA</span></a>
+        <div class="nav-links">
+            <a href="rules.html">Правила</a>
+            <a href="admins.html">Админы</a>
+            <a href="registration.html" id="nav-user">Вход</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="header-flex">
+            <h1>Темы</h1>
+            <button id="openModalBtn" class="ios-btn-primary">+ Создать тред</button>
+        </div>
+        <div id="threadsList"></div>
+    </main>
+
+    <div id="threadModal" class="modal">
+        <div class="modal-content">
+            <h2>Новая тема <span class="beta-text" style="font-size: 14px;">BETA</span></h2>
+            <input type="text" id="t-title" placeholder="Заголовок темы">
+            <textarea id="t-text" placeholder="Текст сообщения..." rows="5"></textarea>
+            <div class="modal-buttons">
+                <button id="closeModalBtn" class="btn-text">Отмена</button>
+                <button id="createThreadBtn" class="ios-btn-primary">Опубликовать</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="site.js"></script>
+</body>
+</html>
